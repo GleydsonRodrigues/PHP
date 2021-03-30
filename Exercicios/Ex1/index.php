@@ -21,6 +21,7 @@ Positivo", "Valor Negativo" ou "Igual a Zero".
     </form>
 
     <?php
+    
         if(isset($_GET['txtNumero'])){
             $numero = $_GET['txtNumero'];
 

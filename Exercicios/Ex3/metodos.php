@@ -46,7 +46,7 @@
         }
         public function sacar($s){
             if($this->getStatus()){
-                if($this->getSaldo >= $s){
+                if($this->getSaldo() >= $s){
                     $this->setSaldo($this->getSaldo() - $s);
                 }
                 else{

@@ -18,13 +18,13 @@
 
     $p1->abrirConta("CC");
     $p1->setDono("Jubileu");
-
     $p2->abrirConta("CP");
     $p2->setDono("Creuza");
-
     $p2->deposito(1000);
+    $p2->sacar(1000);
+    $p1->pagarMensal();
 
-    $p2->sacar(500);
+
     print_r($p1);
     print_r($p2);
 

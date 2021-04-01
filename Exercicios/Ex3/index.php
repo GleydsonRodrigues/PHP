@@ -29,7 +29,9 @@
     print_r($p2);
 
 
-?>    </Pre>
+?>    
+
+</Pre>
 </body>
 </html>
 

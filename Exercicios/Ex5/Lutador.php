@@ -12,24 +12,26 @@ Class Lutador{
 
 
     public function __construct($no, $na, $i, $a,$pe,$v,$d,$e){
-        $nome = $no;
-        $nacionalidade = $na;
-        $idade = $i;
-        $altura = $a;
+        $this->setNome($no);
+        $this->setNacionalidade($na);
+        $this->setIdade($i);
+        $this->setAltura($a);
         $this->setPeso($pe);
-        $vitorias = $v;
-        $derrotas = $d;
-        $empates = $e;
+        $this->setVitorias($v);
+        $this->setDerrotas($d);
+        $this->empates = $e;
     }
     public function apresentar(){
-        echo"Lutador: " . $this->getNome();
+        echo"<b>Lutador: " . $this->getNome(). "</b>";
         echo"<br> Origem: " . $this->getNacionalidade();
         echo"<br>". $this->getIdade() . " anos";
         echo"<br>" . $this->getAltura() . "m de altura";
-        echo"<br> Pesando:" . $this->getPeso(). "Kg";
-        echo"<br> Ganhou:" . $this->getVitorias();
-        echo"<br> Perdeu:" . $this->getDerrotas();
-        echo"<br> Empatou:" . $this->getEmpates();
+        echo"<br> Pesando: " . $this->getPeso(). "Kg";
+        echo"<br> Categoria: " . $this->getCategoria();
+        echo"<br> Ganhou: " . $this->getVitorias();
+        echo"<br> Perdeu: " . $this->getDerrotas();
+        echo"<br> Empatou: " . $this->getEmpates();
+        echo"<br>-----------------------------<br>";
     }
     public function Status(){
         echo $this->getNome();
@@ -37,6 +39,7 @@ Class Lutador{
         echo "<br>". $this->getVitorias() . " vitorias <br>";
         echo $this->getDerrotas() . " derrotas <br>";
         echo $this->getEmpates() . " empates";
+        echo"<br>-----------------------------<br>";
     }
     public function ganharLuta(){
         $this->setVitorias($this->getVitorias() + 1);
@@ -48,10 +51,10 @@ Class Lutador{
         $this->setEmpates($this->getEmpates() + 1);
     }
     public function getNome(){   
-        return $this->Nome;
+        return $this->nome;
     }   
     public function setNome($no){
-        $this->Nome = $no;
+        $this->nome = $no;
     }
     public function getNacionalidade(){
         return $this->nacionalidade;

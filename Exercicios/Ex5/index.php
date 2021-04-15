@@ -18,6 +18,7 @@
     $l[5] = new Lutador("Nerdeard", "EUA", 31, 1.83, 105.7, 12, 2, 2,);
     $l[0]->apresentar();
     $l[1]->apresentar();
+    $l[2]->apresentar();
     ?>
 </body>
 </html>

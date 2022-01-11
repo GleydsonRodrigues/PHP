@@ -10,6 +10,7 @@
     <h1>Lista de Exercícios</h1>
     <ul>
         <li><a href="exercicio1.php">Exercício 1</a></li>
+        <li><a href="exercicio2.php">Exercício 2</a></li>
     </ul>
 </body>
 </html>

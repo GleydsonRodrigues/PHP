@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício 2</title>
+    <style>
+        .tables{
+            display: inline-block;
+            border: solid 1px;
+            margin: 10px;
+            padding: 0px 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <table border="1">
+    
         <?php
             for($j = 0; $j <= 10; $j++){
-                echo "<tr>";
+                echo "<div class='tables'>";
                 for($i = 0; $i <= 10; $i++){
                     $multiplication = $j * $i;
                     echo "
-                        <td>$i x $j = $multiplication</td>
+                        <p>$j x $i = <b>$multiplication</b></p>
                     ";
                 }
-                echo "</tr>";
+                echo "</div>";
             }
 
             

@@ -14,7 +14,7 @@ três e que se encontram no conjunto dos números de 1 até 500. </p>
     for($i = 1; $i <= 500; $i++){
         if($i % 3 == 0 and $i % 2 == 1){
             $sum += $i;
-            echo "<p>o valor da soma é: $i </p>";
+            echo "<p>o valor da soma é: $sum </p>";
         }
        
     }
